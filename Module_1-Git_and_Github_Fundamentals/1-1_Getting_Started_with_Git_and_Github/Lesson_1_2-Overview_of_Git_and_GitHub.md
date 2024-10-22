@@ -7,7 +7,7 @@
 
 # Version control
 
- Git and GitHub are popular environments among developers and data scientists, but you can't discuss them withouw a basic understanding of version control. A version control system lets you track your changes to the source code. This makes it easy for you to recover older versions of your document if you make a mistake. Along with this, it makes collaboration with other team members much easier.
+ Git and GitHub are popular environments among developers and data scientists, but you can't discuss them without a basic understanding of version control. A version control system lets you track your changes to the source code. This makes it easy for you to recover older versions of your document if you make a mistake. Along with this, it makes collaboration with other team members much easier.
  - Tracks changes to source code
  - Recovers older versions
  - Facilitates collaboration 
@@ -22,10 +22,12 @@
  - Free and open-source software under GNU
  - DVCS: Easy accessibility of project copies
  - Distributed aspect makes it popular VCS
+
  ![](./image/Lesson_1_2-pic02.png)
 
  Note that Git also supports branching strategies such as feature branching to organize and manage development. You can use Git without a web interface using your command lined interface but GitHub is one of the most popular web hosted services for Git repositories. Others include Git Lab, Bitbucket, and Beanstock.
-  ![](./image/Lesson_1_2-pic03.png)
+
+![](./image/Lesson_1_2-pic03.png)
 
  # Git and GitHub: Basic terms
 
@@ -37,7 +39,7 @@
  - Working directory: Contains files and subdirectories. 
    ![](./image/Lesson_1_2-pic04.png)
 
-Commit is a snapshot of the project's current state at a specific point in time along with a description of the changes made. A branch is a separate line of development that allows you to work on freatures or fixes independently. Merging combines changes from one branch into another, typically mergin a feature branch into the main branch. Cloning creates a local copy of a remote Git repository on your computer. Let's recap. 
+Commit is a snapshot of the project's current state at a specific point in time along with a description of the changes made. A branch is a separate line of development that allows you to work on features or fixes independently. Merging combines changes from one branch into another, typically mergin a feature branch into the main branch. Cloning creates a local copy of a remote Git repository on your computer. 
 - Commit: Snapshot of the project's current state
 - Branch: Separate line of development
 - Merge: Combines changes from one brach to another
