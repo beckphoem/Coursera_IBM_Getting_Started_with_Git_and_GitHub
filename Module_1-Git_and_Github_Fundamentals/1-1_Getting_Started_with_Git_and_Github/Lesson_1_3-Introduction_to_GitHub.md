@@ -78,3 +78,12 @@ GitLab is a complete DevOps platform, delivered as a single application. GitLab 
 # Summary
 
 GitHub is the online hosting service for Git repositories. Repositories store documents including application source code and enable contributors to track and maintain. What is special about the Git Repository model? Git is designed as a distributed version-control system. Primarily focused on tracking source code during development. Contains elements to coordinate among programmers, track changes, and support non-linear workflows. 
+
+- GitHub is the online hosting service for Git repositories
+- Repositories 
+    - Store documents including source code
+    - Enable version control
+- Git
+    - Distributed version-control system
+    - Focused on tracking source code during development
+    - Supports non-linear workflows
