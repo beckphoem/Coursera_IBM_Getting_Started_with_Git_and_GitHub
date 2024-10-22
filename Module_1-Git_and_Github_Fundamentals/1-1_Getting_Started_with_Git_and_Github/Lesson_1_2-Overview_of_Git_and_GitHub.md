@@ -42,7 +42,7 @@
 Commit is a snapshot of the project's current state at a specific point in time along with a description of the changes made. A branch is a separate line of development that allows you to work on features or fixes independently. Merging combines changes from one branch into another, typically mergin a feature branch into the main branch. Cloning creates a local copy of a remote Git repository on your computer. 
 - Commit: Snapshot of the project's current state
 - Branch: Separate line of development
-- Merge: Combines changes from one brach to another
+- Merge: Combines changes from one branch to another
 - Clone: Local copy of the remote Git repository
 
   ![](./image/Lesson_1_2-pic05.png)
