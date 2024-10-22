@@ -2,4 +2,4 @@
 
 git add .
 git commit -m "update new file"
-git pushs
+git push
