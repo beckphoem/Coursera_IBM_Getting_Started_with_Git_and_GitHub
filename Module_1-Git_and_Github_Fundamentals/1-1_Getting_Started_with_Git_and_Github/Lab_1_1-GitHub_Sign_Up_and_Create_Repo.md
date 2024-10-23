@@ -125,3 +125,9 @@ To upload a local file and commit it to your repository, complete the following 
 ![](./image/Lab_1_1/pic21.png)
 
 4. Your file is uploaded to the repository.
+![](./image/Lab_1_1/pic22.png)
+
+# Summary
+
+Congratulations! In this lab, you have learned how to create a new repository, add a new file, edit a file, upload a file, and commit your changes. We encourage you to continue to update your repository to become familiar with the processes that you have learned. 
+
