@@ -6,9 +6,9 @@
 
 # What are branches?
 
-All files in GitHub are stored on a branch. The main branch is definitive, it stores the deplayable version of your code. 
+All files in GitHub are stored on a branch. The main branch is definitive, it stores the deployable version of your code. 
 
-The main branch is created by default, however, you can use any branch as the main, finished, deployable version of the code. When you plan to change things, you create a new branch and give ti a descriptive  name.
+The main branch is created by default, however, you can use any branch as the main, finished, deployable version of the code. When you plan to change things, you create a new branch and give it a descriptive  name.
 
 The new branch starts as an exact pocy of the original branch. As you make changes, the branch you created holds the changed code. 
 
