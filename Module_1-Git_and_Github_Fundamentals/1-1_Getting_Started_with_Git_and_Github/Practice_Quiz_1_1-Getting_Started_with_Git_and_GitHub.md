@@ -1,16 +1,16 @@
 # Practice Quiz 1-1 : Getting Started with Git and GitHub
 
 1. Which of the following options do you used to request someone to review and appove your project changes before they become final?
-- [] Repository
+- [ ] Repository
 - [x] Pull request
-- [] Fork
-- [] Commit changes
+- [ ] Fork
+- [ ] Commit changes
 
 2. What is the primary purpose of version control?
-- [] Creates a backup of the documents
-- [] Allows you to securely log in from one computer to another
+- [ ] Creates a backup of the documents
+- [ ] Allows you to securely log in from one computer to another
 - [x] Allows you to keep track of changes to yoru documents
-- [] Alters the formatting of the documents
+- [ ] Alters the formatting of the documents
 
 3. Which of the following is a feature of the Git Repository model?
 - [] It is based on a binary tree
