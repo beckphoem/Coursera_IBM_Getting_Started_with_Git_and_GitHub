@@ -11,4 +11,4 @@ After completing this lab, you will be able to:
 
 # Prerequisites
 
-This hands-on lab requires you to have created a GitHub account with a repository in it, as covered in [Getting stared with GitHub][../1-1_Getting_Started_with_Git_and_Github/Lab_1_1-GitHub_Sign_Up_and_Create_Repo.md] lab
+This hands-on lab requires you to have created a GitHub account with a repository in it, as covered in [Getting stared with GitHub](../1-1_Getting_Started_with_Git_and_Github/Lab_1_1-GitHub_Sign_Up_and_Create_Repo.md) lab
