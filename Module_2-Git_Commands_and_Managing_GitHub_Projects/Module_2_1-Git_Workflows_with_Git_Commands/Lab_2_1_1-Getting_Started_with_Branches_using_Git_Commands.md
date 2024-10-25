@@ -261,6 +261,7 @@ git branch -d my1stbranch
 1. Create a new directory and branch called `newbranch`
 <details>
 <summary>Click here for Solution</summary>
+
 ```
 mkdir newbranch
 git init
