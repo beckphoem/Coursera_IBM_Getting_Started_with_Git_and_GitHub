@@ -318,11 +318,42 @@ git revert HEAD --no-edit
 ```
 </details>
 
-7. reate a new file called `newgoodfile`
+7. Create a new file called `newgoodfile`
+<details>
+<summary>Click here for Solution</summary>
+
+```
+touch newgoodfile
+```
+</details>
 8. Add the lastest file to `newbranch`
+<details>
+<summary>Click here for Solution</summary>
+
+```
+git add newgoodifle
+```
+
+</details>
 9. Commit the changes
+<details>
+<summary>Click here for Solution</summary>
+
+```
+git commit -m "add a new file"
+```
+</details>
 10. Merge the changes in `newbranch` into `master`.
 
+<details>
+<summary>Click here for Solution</summary>
+
+```
+git checkout master
+git merge newbranch
+git log
+```
+</details>
 # Summary
 
 In this lab, you have learned how to create and work with branches using Git commands in a local repository. In a subsequent lab,  you learn how to synchronize changes in your local repository with remote GitHub repositories. 
