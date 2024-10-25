@@ -259,11 +259,65 @@ git branch -d my1stbranch
 # Exercise 11: Practice on your own
 
 1. Create a new directory and branch called `newbranch`
+<details>
+<summary>Click here for Solution</summary>
+```
+mkdir newbranch
+git init
+ls -la .git
+```
+</details>
+
 2. Make `newbranch` the active branch
+
+<details>
+<summary>Click here for Solution</summary>
+
+```
+git branch newbranch
+git branch 
+git checkout newbrach 
+git branch
+```
+</details>
+
 3. Create an empty file called `newbranchfile`
+
+<details>
+<summary>Click here for Solution</summary>
+
+```
+touch newbranchfile
+```
+</details>
+
 4. Add the newly created file to your branch
+<details>
+<summary>Click here for Solution</summary>
+
+```
+git add newbranchfile
+```
+</details>
+
 5. Commit the changes in your `newbranch`
+<details>
+<summary>Click here for Solution</summary>
+
+```
+git commit -m "add a file newbranch"
+```
+</details>
 6. Revert the last commited changes
+
+<details>
+<summary>Click here for Solution</summary>
+
+```
+git revert HEAD --no-edit
+```
+</details>
+
 7. reate a new file called `newgoodfile`
 8. Add the lastest file to `newbranch`
 9. Commit the changes
