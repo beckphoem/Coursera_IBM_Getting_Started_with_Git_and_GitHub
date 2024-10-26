@@ -68,3 +68,79 @@ Type 'git clone' followed by pasting the URL that you copied above and then pres
     - Next, run `git commit -m <message>` to commit changes in the staging area
 - To move changes fully into the GitHub repository 
     - Use the `git push` command
+
+# Remmote Repositories
+
+Remote repositories are repositories that are stored elsewhere - on the internet, on your network, even on your local computer. 
+
+You can have several of remote repositories, each of which generally is either read-only or read/write for you. 
+
+Collaborating with others involves managing these remote  repositories and involves push, pull, and fetch operations to and from them when you need to share work. 
+
+Use git push to transfer your changes to the remote repo. Use git fetch to transfer any changes from the remote repo to your local repo.
+
+It does not merge those changes to the branch you are working on. 
+
+You can perfomr a merge manually if you want. Use git pull to transfer any changes from the remote repo to your local repo, and merge them to a branch. Developers use the terms upstream adn origin when talking about remote repos.
+
+Origin generally refers to your fork and upstream refers to the original work. These are the norms. You can of course name them anything you like. 
+
+![alt text](image/Lesson_2_1_4/3.png)
+
+# Forking a Project
+
+Forking is used to take a copy of a GitHub repository and use it as the base for a new project. You can also use forking to submit back changes into the original repository. 
+
+This is also used to independently make changes to a project. In that instance, when you are satisfied with your changes, submit a pull request to the original project owner.
+
+ They can decide whether or not to accept your changes. It is often a legal requirement to keep a copy of the of the license file. Even if no legal requirement exists, it's good practice. 
+ 
+- Forking a Project
+    - Takes a copy of a GitHub repository to use it as the base for a new project.
+    - Submit changes back to the original repository
+
+- Independently make changes to a project
+    - Submit a pull request to the original project owner
+    - Owner decides whether to accept updates
+- Keep a copy of the license file
+    - Often a legal requirement 
+
+# Steps in Forking a Project
+
+ Navigate to the repository that you want to fork. In the top-right corner, click the "Fork" button.
+ 
+ ![alt text](image/Lesson_2_1_4/4.png)
+
+# Syncing a Fork of a Project
+
+To keep a fork in sync with the original work from a local clone. 
+
+First, create a local clone of the project. To configure Git to sync your fork: Open a Terminal and changes to the directory containing the clone. Type `git remote -v` This gives you the remote repository. Type `git remote add upstream <clone directory>` that you used in creating your clone. 
+
+Adding upstream adds the original repository as a new remote repository labelled upstream. If you type `git remote -v` you'll see the change reflected. 
+
+To kepp a fork in sync with the original work from a local clone:
+- Create a local clone of the project
+- Configure Git to sync the fork:
+    - Open a Terminal and change to the directory containing the clone
+    - To access the remote repository, type `git remote -v`
+    - Type `git remote` and `upstream <clone directory>`
+    - To see the change, type `git remote -v`
+
+# Commands for Managing Forks
+
+Other commands of interest include `git fetch upstream branchs` and `git merge upstream/master` which merges changes into the master branch. You will also see `git pull upstream` used to fetch and merge the remote branch in the same step. 
+
+`Git pull upstream` reduces the number of steps to sync with a remote branch, but the automatic merges are not always desired. 
+
+- To grab upstream branches
+    - `git fetch upstream`
+
+- To merge changes into the master branch
+    - `git merge upstream/master`
+
+# Summary
+- GitHub has over existing 100M repositories
+- Clone a repository to copy it locally
+    - Sync changes back to the original
+- Fork a repository
