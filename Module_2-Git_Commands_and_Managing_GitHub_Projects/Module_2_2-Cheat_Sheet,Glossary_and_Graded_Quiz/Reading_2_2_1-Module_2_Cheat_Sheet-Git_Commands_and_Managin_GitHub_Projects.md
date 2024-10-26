@@ -4,3 +4,4 @@
 |---|---|---|
 |git add| Used to move changes from the working directory to the staging area| ``` git add sample.md ```|
 |git add .| Allows to move the chagned files into the staging area on GitHub repositories| `git add . `|
+|git am| Used to apply patches emailed to the repository| `git am < patchfile.path`|
