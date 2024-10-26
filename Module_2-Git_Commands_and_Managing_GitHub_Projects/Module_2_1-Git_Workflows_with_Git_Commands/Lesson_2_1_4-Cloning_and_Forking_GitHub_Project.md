@@ -60,7 +60,7 @@ Type 'git clone' followed by pasting the URL that you copied above and then pres
 
  Next, when you are ready, run `git commit -m <message>` and this will commit changes in the staging area. 
 
- When you are ready to move your changes fully into the GitHub repository, Use the `git push` command. This will pushh all the commited changes into the repository.
+ When you are ready to move your changes fully into the GitHub repository, Use the `git push` command. This will push all the commited changes into the repository.
 
  - To sync code back to GitHub
     - Run the `git add <file>` command
@@ -119,7 +119,7 @@ First, create a local clone of the project. To configure Git to sync your fork: 
 
 Adding upstream adds the original repository as a new remote repository labelled upstream. If you type `git remote -v` you'll see the change reflected. 
 
-To kepp a fork in sync with the original work from a local clone:
+To keep a fork in sync with the original work from a local clone:
 - Create a local clone of the project
 - Configure Git to sync the fork:
     - Open a Terminal and change to the directory containing the clone
