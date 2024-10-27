@@ -34,3 +34,7 @@
 |git reset | Undoes changes that were made to files in your working directory| `git reset HEAD~1`|
 |git revert| Used to undo botched commits| `git revert HEAD`|
 |git send-email| Example 1: Sends your email submission without corruption by your MUA <br> Example 2: Sends a collection of patches as emails| Example 1: `git send-email --to=recipient@example.com` <br> `path/to/patchfile.path` <br> Example 2: `git send-email --to recipient@example.com` <br> `patches/*.patch`|
+|git-shell| Used as a restricted login shell for shared central repository users| `sudo usermod -s /usr/bin/git-shell gituser`|
+|git status| Allows to see the state of your working directory and the staged snapshot of the changes | `git status`|
+|git version| Displays the current Git version installed on your system| `git --version`|
+|git web| Provides a web front-end to Git repositories|`git instaweb --port=8080`|
