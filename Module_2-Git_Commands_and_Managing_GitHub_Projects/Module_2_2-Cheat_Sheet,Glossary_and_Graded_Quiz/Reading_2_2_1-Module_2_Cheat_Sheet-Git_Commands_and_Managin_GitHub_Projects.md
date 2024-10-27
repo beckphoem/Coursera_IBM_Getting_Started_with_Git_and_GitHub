@@ -11,3 +11,22 @@
 |git clone| Allows to create a copy of the remote repository| `git clone <repository-url>`|
 |git commit| Allows you to take staged snapshots if changes and commit them to the project| `git commit -m "Your commit message here"`|
 |git config --global user.enaml| Example 1: Sets a golbal email configuration for Git <br> Example 2: Sets a global username configuration for Git| Example 1: `git config --global user.name "your.email@example.com"` <br> Example 2: `git config --global user.name "Your name"`|
+|git deamon| Used to allow anonymous dowload from the repository| `git deamon --reuseaddr --verbose`|
+|git fetch| Used to transfer the changes from the remote repo to your local repo| `get fetch <options> <remote name> <branch name>`|
+|git fetch upstream/master| Generates or perpares e-mail submission if you adopt Linux kernel-style public froum workflow | `git format-patch -n <number_of_commits>`|
+|git format-patch| Generates or prepares e-mail submission if you adopt Linux kernel-style public forum workflow| `git format-patch -n <number_of_commits>`|
+|git http-backend| Provides a serser-side implementation of Git-over-HTTP, allowing both fetch and push services| `git clone --bare /path/to/repos/myrepo.git` <br> `cd myrepo.git` <br> `git update-server-info`|
+|git init | Used to clone an existing repository| `git init <directory>`|
+|git instaweb| Allows to set up web front-end to Git repositories| `git instaweb -p 8080`|
+|git log| Enables to browse previous changes to a project| `git log -p filename`|
+|git merge| Used to merge changes in the active branch into another branch| `git merge feature_branch`|
+|git merge upstream/master| Merges changes from the 'upstream/master' branch to the current branch| `git mmerge upstream/master`|
+|git pull| Used to transfer the changes from the remote repo to your local repo, and merge them to a branch| `git pull origin main`|
+|git pull downstream| pulls changes from a dowstream repository, specifically from the master branch of that repository| `git pull downstream main`|
+|git push| Used to push all the committed changes into the repostiory| `git push origin your_branch_name`|
+|git remote| A command to manage a set of tracked repositories| `git remote add upstream https://github.com/original/repo.git`|
+|git remote add origin `<URL> `| Adds a remote repository named "orgin" with the specified URL| `git remote add origin https://github.com/yourusername/your-repo.git`|
+| git remote add upstream| Adds the original repository as a new remote repository labeled upstream| `git remote add upstream https://github.com/original/repo.git`|
+|git remote rename | The git remote rename command is followed by the name of the remote repostiory(origin) you want to rename and the new name (upstream) you want to give it| `git remote rename origin new-origin`|
+|git remote -v| Allows to view the remotes associated with the local repository| `git remote -v`|
+|git request-pull| Example 1: Creates a summary of changes for your upstream to pull <br> Example 2: Generates a summary of pending changes for an email request| Example 1: `git request-pull origin/main your-branch` <br> Example 2: `git request-pull <base> <head> <repository>`|
