@@ -30,3 +30,7 @@
 |git remote rename | The git remote rename command is followed by the name of the remote repostiory(origin) you want to rename and the new name (upstream) you want to give it| `git remote rename origin new-origin`|
 |git remote -v| Allows to view the remotes associated with the local repository| `git remote -v`|
 |git request-pull| Example 1: Creates a summary of changes for your upstream to pull <br> Example 2: Generates a summary of pending changes for an email request| Example 1: `git request-pull origin/main your-branch` <br> Example 2: `git request-pull <base> <head> <repository>`|
+|git rerere| Reuses recorded resolution of previously resolved merge conflicts| `git rerere` <br> `git rerere diff`|
+|git reset | Undoes changes that were made to files in your working directory| `git reset HEAD~1`|
+|git revert| Used to undo botched commits| `git revert HEAD`|
+|git send-email| Example 1: Sends your email submission without corruption by your MUA <br> Example 2: Sends a collection of patches as emails| Example 1: `git send-email --to=recipient@example.com` <br> `path/to/patchfile.path` <br> Example 2: `git send-email --to recipient@example.com` <br> `patches/*.patch`|
