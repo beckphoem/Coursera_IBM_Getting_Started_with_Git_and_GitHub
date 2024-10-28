@@ -1,100 +1,263 @@
-# Final Project Git CLI
+# Practice Project: Part 2 - Git CLI
 
-# Scenario
+# Overview
 
-Your changes have been accepted and merged and the company has created a new global [repository](https://github.com/ibm-developer-skills-network/jbbmo-Introduction-to-Git-and-GitHub) for the teams to collaborate. Other developers have contributed to this repostiory over time. Your team has found a mistake in one of the markdown files. You are asked to fork this repository and fix the mistake using Git CLI in the provided lab environment and open a pull request (PR).
+Congratulations on starting your company's journey with Git and GitHub by open-sourcing the Shipping Cost Calculator Python script. All the developers have contributed to the repository, and their changes have accepted and merged into a new global repository. Now, you have been asked to edit some of the code and also add few more files. For this, you will fork this repository, make the necessary edits, add files using Git CLI in the provided lab environment, and open a pull request. 
 
 # Objectives
 
-After completing this lab, you will be able to demonstrate that you can : 
+After completing this lab, you will be able to demonstrate that you can:
 
 1. Fork the upstream repository into your own account.
 
 2. Clone the code locally in the lab environment.
 
-3. Create a branch in the repository.
+3. Create a branch in the repository
 
-4. Make chagnes in the branch and commit it.
+4. Merge the branch back into the `main` branch.
 
-5. Merge the branch back into the `main` branch.
+5. Create a pull request from the forked repository to the upstream repository.
 
-6. Create a Pull Request from the forked repository to the upstream repository.
-
-7. Revert a change that you made earlier. 
-
-> Note: Throughout this lab, you will be prompted to copy and paste URLs into a notepad and save the notepad on your own device. These URLs will be uploaded for peer review in the Final Submission section of the course. You can use any notepad app to keep note your URLs.
+6. Revert a change that you made earlier.
 
 # Task 1: Fork the repository
 
-1. Fork the project's [source repository](https://github.com/ibm-developer-skills-network/jbbmo-Introduction-to-Git-and-GitHub).
+1. Log in to GitHub and go to the [Central Repository](https://github.com/ibm-developer-skills-network/Centralized-repository-shipping_calculations)
 
-2. Save the URL of your foked repository in a notepad to submit later for peer review.
+2. Click on `Fork` to create a personal copy of a GitHub repository in your account. This allows you to make changes independently.
 
-# Task 2: Fix the typo and merge with main
+![alt text](image/Reading_3_1_3/1.png)
 
-1. Clone the forked repository in the lab environment. 
+3. Now click on `Create Fork`
 
-2. Create a branch named `bug-fix-typo`
+![alt text](image/Reading_3_1_3/2.png)
 
-3. Change the footer in the main README.md file from
+> NOTE: In real-life scenarios you will have the flexibility to change the repository name. However, in this Practice Project, it's recommended to keep the same repository name to ensure you complete the Project correctly and enhance your understanding.
 
-```
-2022 XYZ, Inc.
-```
-to
-```
-2023 XYZ, Inc.
-```
+# Task 2: Create a new branch and submit the first pull request
 
-4. Add the file with your fix and commit it with a meaningful message.
-
-5. Push your fix to the `bug-fix-typo` branch. In this step, you will need to generate to personal access token from GitHub.com to use as your password. Follow the instructions in the lab [Generate GitHub personal access token](/Module_2-Git_Commands_and_Managing_GitHub_Projects/Module_2_1-Git_Workflows_with_Git_Commands/Lab_2_1_0-Generate_personal_access_token.md)
-
-6. Switch to the main branch. Merge the `bug-fix-typo` branch back into your `main` branch. Take a screenshot showing the current branch and successful merge operation with the file that has changed. Save the screenshot as `merge_branches.png` or `merge_branches.jpg`.
-
-# Task 3: Revert the typo and submit a pull request. 
-
-1. Check the content of README.md in the main branch. The file should now read:
-```
-2023 XYZ, Inc.
-```
-
-2. Create a new branch named `bug-fix-revert`.
-
-3. Revert back the change you implemented in the previous task using the `git revert` command. The file should now read:
+1. Open the terminal and clone your forked repository in the lab environment. Make sure to replace <your GitHub username> with your actual GitHub username.
 
 ```
-2022 XYZ, Inc.
+git clone https://github.com/<your GitHub username>/Centralized-repository-shipping_calculations.git
 ```
 
-4. Push the revert to your repository in the `bug-fix-revert` branch. Please ensure you use the personal access token that you generated on GitHub for your account as the password (and not your actual git password), when prompted.
-
-5. Go to the GitHub UI. Create a new pull request from the `bug-fix-revert` branch of your repository to the `main` branch of the [original repository](https://github.com/ibm-developer-skills-network/jbbmo-Introduction-to-Git-and-GitHub). This PR will be closed automatically. **Note the URL of this PR in a notepad to submit later for peer review**.
-
-# Task 4: Check the status of your branches.
-
-1. Navigate to the `Branches` section witnin the GitHub UI on your page. It will be in the following format:
+2. Switch to the **Centralized-repository-shipping-calculations** directory by using the `cd` command
 
 ```
-https://github.com/<Your Github username>/jbbmo-Introduction-to-Git-and-GitHub/branches
+cd Centralized-repository-shipping_calculations
 ```
 
-2. Within this section, you will find the branch names along with their current status.
+3. Create and switch to a new branch named **shipping_calculator_fixes** using the `git checkout -b` command.
 
-3. Make a note of the URL of this page in a notepad to submit during peer review.
+```
+git checkout -b shipping_calculator_fixes
+```
 
-# Checklist
+Verify the current branch and view all branches with the command `git branch`
 
-After completing this part of the final project, you should have:
+![alt text](image/Reading_3_1_3/3.png)
 
-1. The forked repository URL.
+4. Insert the following line into the `Shipping_Cost_Calculator.py` file, replacing <your GitHub username> with your real GitHub username.
 
-2. The pull request URL.
+```
+ # Here is a new update by <your GitHub username>
+ ```
 
-3. The screenshot showing the merge operation of `bug-fux-typo` into `main` named `merge_branches` in png of jpg format.
+ 5. To configure your Git user information, execute the given commands
+ ```
+ git config --global user.email "your-email@example.com"
+```
 
-4. The URL of the `branches` page showing the branches of the repository and their status.
+```
+git config --global user.name "Yourname"
+```
+
+> NOTE: Please ensure that you replace "your-email@example.com" with your actual GitHub email ID and "YourName" with your actual GitHub username.
+
+6. Add and commit the code changes you have made, and check the commit status:
+```
+git add .
+git commit -m "added a new line to Shipping_Cost_Calculator.py"
+git status
+```
+
+`git add`: Stages changes made to Shipping_Cost_Calculation.py for the next commit.
+
+`git commit`: git commit records the staged chagnes in Shipping_Cost_Calculator.py along with a specified message ('Added a new line to Shipping_Cost_Calculator.py')
+
+`git status`: git status displays the current status and changes of Shipping_Cost_Calulator.py within the repository.
+
+7. Use the command below to push the changes you made above in the lab environment or your local system IDE to the `shipping_calulator_fixes` branch in your GitHub repository, which is tracked as the upstream branch.
+```
+git push --set-upstream origin shipping_calculator_fixes
+```
+
+> `-set-upstream`:
+> This flag is used to set up a tracking relationship between the local branch and the remote branch allowing you to use git push and git pull without specifying the remote branch every time.
+
+> `origin`:
+> This is the default name given to the remote repository from which originally cloned your local repository.
+
+> `shipping_calculator_fixes`:
+> This is the name of the local branch that you want to push to the origin (ie, remote) repository. It represetns the set of changes you have made locally and want to update on the remote server.
+
+In the provided command, you're pushing the changes from the shipping_calculator_fixes branch (created in your lab environment or local system IDE) to the remote repository (`https://github.com/<your GitHub username>/Centralized-repository-shipping_calculations.git`) which you forked in Task 1.
+
+The `--set-upstream` flag in the command establishes a tracking link between the *shipping_calculator_fixes* branch (in the lab environment or your local system) and the remote branch with the same name (shipping_calculator_fixes) in the origin repository. This streamlines future operations by eliminating the requirement to explicitly mention the name of the remote branch (ie, shipping_calculator_fixes) every time you run `git pull` or `git push`.
+
+<details>
+<summary>Please follow the appropiate process, as mentioned here: </summary>
+
+# Sceario 1: If you encounter the "Allow" prompt, kindly proceed with the following steps:
+
+1. You will see the below pop-up in the Theita evironment . Click on `Allow`
+
+![ ](image/Reading_3_1_3/4.png)
+> Please disregard this message as it is unrelated to the Git commands and has no impact on the process. 
+
+2. At the top, you'll reveive a prompt. Enter your GitHub username and then press 'Enter'.
+
+![alt text](image/Reading_3_1_3/5.png)
+
+3. Another prompt will appear at the top. Enter your GitHub PAT(Personal Access Token) as password and then press `Enter`.
+
+![alt text](image/Reading_3_1_3/6.png)
+
+# Scenario 2: You will get the prompts in the terminal:
+
+1. In the terminal, a prompt will appear. Enter your GitHub username and press `Enter`.
+![alt text](image/Reading_3_1_3/7.png)
+
+2. In the terminal, you'll receive another prompt. Enter your GitHub PAT (Personal Access Token) and press 'Enter'.
+![alt text](image/Reading_3_1_3/8.png)
+> When entering or pasting your PAT (Personal Access Token) in the terminal, the token won't be visible for secutity reasons. Therefore, ensure accurate entry or pasting before pressing 'Enter'.
+
+This ensures the successful pushing of your changes to the remote origin repository.
+![alt text](image/Reading_3_1_3/9.png)
+
+
+</details>
+
+8. Generate and merge a pull request to incorporate the changes from the `shipping_caculator_fixes` branch into your `main` branch
+
+> Note: in the past, the default branch in your GitHub repo used the name `master`. Effective Otx 1. 2020, all new GitHub repositories use the more inclusive term `main` as the name of the default branch instead of `master`.
+
+Please refer to tasks 7 and 8 of [Practice Project Part 1](./Reading_3_1_2-Practice_Project-Part_1-GitHub_UI.md) to complete this process. 
+
+<details>
+<summary>Your pull request should look like the example shown here</summary>
+
+![alt text](image/Reading_3_1_3/10.png)
+</details>
+
+# Task 3: Commit another update and revert it
+
+1. Add the following comment to the `Shipping_Cost_Calculator.py` file
+
+```
+# Here is another update by <your GitHub username>
+```
+
+2. Add and commit the new changes:
+
+<details>
+<summary>Click here to view the solution</summary>
+
+```
+git add .
+```
+
+```
+git commit -m "added additional line to Shipping_Cost_Calculator.py"
+```
+
+</details>
+
+**However, you now belive that this recently added line is unnecessary, and you can include it later.**
+
+One method to achieve this is to remove the line you added, and then include and commit the changes again.
+
+**Instead, you will now utilize the `git revert` command to accomplish the same functionality.**
+
+3. Execute the `git revert` command as below.
+
+```
+git revert HEAD --no-edit
+```
+
+`git revert`: is a Git command used to undo a previous commit by creating a new commit that represents the inverse of the specified commit.
+
+`HEAD`: This refers to the lastest commit in the current branch.
+
+`--no-edit`: This option is used to perform the revert without opening the default text editor to edit the commit message. 
+
+**After running this command, Git will automatically generate a commit message indicating that it's a revert and will create a new commit with the changes undone. The `no-edit` option prevents Git from opening an editor for you to modify the commit message; instead, it uses the default revert message. 
+
+4. This will result in the following output:
+
+![alt text](image/Reading_3_1_3/11.png)
+
+You will observe that the extra commit has been effectively undone. If you inspect the `Shipping_Calculator.py` file, the extra line you added will no longer be present.
+
+Now, you are back to your initial commit and can proceed to push it to your repository.
+
+5. Switch to the main branch using the `git checkout` command:
+
+```
+git checkout main
+```
+
+6. Execute the `git merge` command to push the udpates from the `shipping_calculator_fixes` branch into your `main` branch.
+
+```
+git merge shipping_calculator_fixes
+```
+
+![alt text](image/Reading_3_1_3/12.png)
+
+7. Run the `git log` command to obtain a chronological record of all commits. This will display information about the line that was added and subsequently undone through the `git revert` command.
+
+```
+git log
+```
+
+![alt text](image/Reading_3_1_3/14.png)
+
+> Note: To exit the git log command, simply press the "Q" key. This action will close the log view and bring you back to the command prompt.
+
+**With this action, all the commits from the `sipping_calculation_fixes` branch have been successfully pushed to the `main` branch in your forked repository**
+
+
+# Task 4: Raise a pull request from your repository to the centralized collaboration repository
+
+Now, you will contribute your project to the centralized collaboration repository for consideration and acceptance by the company authorities. 
+> Since this is the centralized repo, only the company authorities have `write` and `Admin` access to it.
+
+> You can only raise pull request to this and do not have access to merge it. 
+
+1. Navigate to `Pull request` and click on `New pull request` in your GitHub repository.
+
+![alt text](image/Reading_3_1_3/15.png)
+
+2. Select `compare across fork` , pick the relevant fields from the dropdown, and then click on `Create pull request`.
+
+![alt text](image/Reading_3_1_3/16.png)
+
+The `head repository` and the `compare` fields refer to the repository URL and branch, respectively, from where you want to initiate the pull request. In this instance, it is your GitHub repository.
+
+The `base repostiory` and the `base` fields refer to the repository URL and branch, respectively, of the upstream repository where you intend to submit a pull request. In this instance, it is the centralized repository that you forked during task 1.
+
+3. Include and appropriate comment and proceed to click on `Create pull request`
+
+![alt text](image/Reading_3_1_3/17.png)
+
+4. The displayed interface indicates that you have successfully submitted your lastest update to your company's centralized repository for collaboration.
+
+![alt text](image/Reading_3_1_3/18.png)
+
+5. The pull request will undergo review and subsequently be merged by the administrators of the repository.
 
 # Summary
 
-Congratulations! You have completed both parts of the final project. You have demonstrated that you know how to create an open-source project in Git, make changes to that project, and make it available to the community. You can fork a GitHub repository, clone it to your local system, make changes to the local repository, commit the changes locally, push it back to your GitHub fork, and create a pull request to add your update to the original repository.
+In this lab, you forked the repository to your account and cloned it locally. You then created a new branch for making changes. After completing your modifications, you merged the branch back into `main`. You also learned to create pull request for collaboration. Finally, you explored the process fo reverting changes when needed. 
