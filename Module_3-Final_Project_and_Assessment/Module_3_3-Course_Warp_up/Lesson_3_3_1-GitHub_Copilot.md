@@ -7,7 +7,7 @@
 
 # Scenario
 
-Imagine you have a friend who teams up with you on a project, helping you write code faster and beeter by providing hints and suggestions, that would be awesome. 
+Imagine you have a friend who teams up with you on a project, helping you write code faster and better by providing hints and suggestions, that would be awesome. 
 
 GitHub Copilot is designed to do exactly this using the power of artificial intelligence or AI. 
 
@@ -26,7 +26,7 @@ Autocompletion:
 - Classes
 - Code structures
 
-Let's look at the features of GitHub Copilot. The first one is code auto-completion. Github Copilot Suggests whole lines or blocks of code based on the context of the code you are currently working on. It can complete entire functions clases, or other code structure. 
+Let's look at the features of GitHub Copilot. The first one is code auto-completion. Github Copilot Suggests whole lines or blocks of code based on the context of the code you are currently working on. It can complete entire functions classes, or other code structure. 
 
 Real-time suggestions:
 - Repetitive or standard code 
@@ -101,7 +101,7 @@ To accept a suggestion, you can use the tab key or select the suggestion.
 
 # Reviewing and testing 
 
-After generating or editing the code, you will review it to ensure it aligns with your project's requrements and best coding practices.
+After generating or editing the code, you will review it to ensure it aligns with your project's requirements and best coding practices.
 You will test the code to verify that it functions as expected.
 
 ![](image/Lesson_3_3_1/9.png)
